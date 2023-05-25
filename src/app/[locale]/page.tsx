@@ -1,8 +1,5 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import CV from "./cv/page";
 
 export default function Index() {
-  const t = useTranslations("Index");
-  return <h1 className="text-blue-600">{t("title")}</h1>;
+  return <CV />;
 }

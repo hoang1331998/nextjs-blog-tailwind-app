@@ -1,36 +1,27 @@
 import React from "react";
-import './style.css'
+import "./style.css";
 
 function RotatingSlide() {
   return (
-    <div className="rotator">
-      <div className="items">
-        <img src="1.jpg" alt="Image Alt" />
-      </div>
-      <div className="items">
-        <img src="2.jpg" alt="Image Alt" />
-      </div>
-      <div className="items">
-        <img src="3.jpg" alt="Image Alt" />
-      </div>
-      <div className="items">
-        <img src="4.jpg" alt="Image Alt" />
-      </div>
-      <div className="items">
-        <img src="5.jpg" alt="Image Alt" />
-      </div>
-      <div className="items">
-        <img src="6.jpg" alt="Image Alt" />
-      </div>
-      <div className="items">
-        <img src="7.jpg" alt="Image Alt" />
-      </div>
-      <div className="items">
-        <img src="8.jpg" alt="Image Alt" />
-      </div>
-      <div className="items">
-        <img src="9.jpg" alt="Image Alt" />
-      </div>
+    <div className="scope">
+      <span className="class-1">
+        <img
+          src="https://i.postimg.cc/BQcRL38F/pexels-photo-761963.jpg"
+          alt="not found"
+        />
+      </span>
+      <span className="class-2">
+        <img
+          src="https://i.postimg.cc/1RWVB11x/pexels-photo-941693.jpg"
+          alt="not found"
+        />
+      </span>
+      <span className="class-3">
+        <img
+          src="https://i.postimg.cc/CMfHRKfP/woman-2003647-960-720.jpg"
+          alt="not found"
+        />
+      </span>
     </div>
   );
 }

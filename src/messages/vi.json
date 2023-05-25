@@ -1,5 +1,8 @@
 {
-    "Index": {
-      "title": "Xin Chào!"
-    }
+  "Index": {
+    "title": "Xin Chào!"
+  },
+  "CV": {
+    "connect-now": "Liên hệ ngay"
   }
+}

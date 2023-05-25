@@ -1,5 +1,10 @@
 {
-    "Index": {
-      "title": "Hello world!"
-    }
+  "Index": {
+    "title": "Hello world!"
+  },
+  "CV": {
+    "connect-now": "Connect now",
+    "hi": "Hi, i am Vu Xuan Hoang",
+    "welcome":  "Welcome to my CV!"
   }
+}
