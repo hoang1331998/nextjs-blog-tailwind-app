@@ -1,6 +1,4 @@
-:root{
-  --i: 1;
-}
+
 .class-1 {
   --i: 1;
 }
@@ -10,25 +8,28 @@
 .class-3 {
   --i: 3;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #0f2027;
-  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  overflow: hidden;
+.class-4 {
+  --i: 4;
 }
+.class-5 {
+  --i: 5;
+}
+.class-6 {
+  --i: 6;
+}
+.class-7 {
+  --i: 7;
+}
+.class-8 {
+  --i: 8;
+}
+
 .scope {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   transform-style: preserve-3d;
-  animation: slid 30s linear infinite;
+  animation: slid 10s linear infinite;
 }
 
 .scope span {
@@ -39,7 +40,7 @@ body {
   height: 100%;
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(180px);
 }
 .scope span img {
   position: absolute;
@@ -49,11 +50,12 @@ body {
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
-  transition: 2s;
+  transition: 1s;
 }
 .scope span:hover img {
-  transform: translateY(-50px) scale(1.7);
+  transform: translateY(-50px) scale(1.2);
 }
+
 @keyframes slid {
   0% {
     transform: perspective(1000px) rotateY(0deg);

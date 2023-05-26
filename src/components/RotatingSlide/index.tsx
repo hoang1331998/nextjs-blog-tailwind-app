@@ -1,26 +1,41 @@
 import React from "react";
 import "./style.css";
+import reactLogo from "@/assets/images/react-logo.png";
+import htmlLogo from "@/assets/images/html-logo.png";
+import cssLogo from "@/assets/images/css-logo.jpg";
+import gitLog from "@/assets/images/git-logo.png";
+import jsLogo from "@/assets/images/js-logo.png";
+import nextJsLogo from "@/assets/images/nextjs-logo.png";
+import nodeJsLogo from "@/assets/images/node-js-logo.png";
+import ubuntuLogo from "@/assets/images/ubuntu-logo.jpg";
+import Image from 'next/image';
 
 function RotatingSlide() {
   return (
     <div className="scope">
       <span className="class-1">
-        <img
-          src="https://i.postimg.cc/BQcRL38F/pexels-photo-761963.jpg"
-          alt="not found"
-        />
+        <Image style={{ opacity: "0.9" }} src={reactLogo} alt="not found" />
       </span>
       <span className="class-2">
-        <img
-          src="https://i.postimg.cc/1RWVB11x/pexels-photo-941693.jpg"
-          alt="not found"
-        />
+        <Image style={{ opacity: "0.9" }} src={htmlLogo} alt="not found" />
       </span>
       <span className="class-3">
-        <img
-          src="https://i.postimg.cc/CMfHRKfP/woman-2003647-960-720.jpg"
-          alt="not found"
-        />
+        <Image style={{ opacity: "0.9" }} src={cssLogo} alt="not found" />
+      </span>
+      <span className="class-4">
+        <Image style={{ opacity: "0.9" }} src={gitLog} alt="not found" />
+      </span>
+      <span className="class-5">
+        <Image style={{ opacity: "0.9" }} src={jsLogo} alt="not found" />
+      </span>
+      <span className="class-6">
+        <Image style={{ opacity: "0.9" }} src={nextJsLogo} alt="not found" />
+      </span>
+      <span className="class-7">
+        <Image style={{ opacity: "0.9" }} src={nodeJsLogo} alt="not found" />
+      </span>
+      <span className="class-8">
+        <Image style={{ opacity: "0.9" }} src={ubuntuLogo} alt="not found" />
       </span>
     </div>
   );
