@@ -8,7 +8,10 @@ export default function CV() {
     <div className="bg-[#191923] py-[20px]">
       <div className="container mx-auto">
         <div className="flex">
-          <Sidebar />
+          <div className="sidebar">
+            <Sidebar />
+          </div>
+
           <Content />
         </div>
       </div>

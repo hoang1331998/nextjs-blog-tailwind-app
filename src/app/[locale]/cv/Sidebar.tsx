@@ -11,7 +11,7 @@ import {
 import React from "react";
 function Sidebar() {
   return (
-    <div className="w-[25%] bg-[#292730] cv-page-height rounded-tl-[10px] rounded-l-[10px] ">
+    <div className="w-full bg-[#292730] cv-page-height rounded-tl-[10px] rounded-l-[10px] ">
       {/* avatar */}
       <div className="w-full flex flex-col items-center justify-center avatar-block">
         <Image
@@ -55,7 +55,7 @@ function Sidebar() {
                 type="circle"
                 percent={99}
                 width={50}
-                strokeColor={["#fbbf24"]}
+                strokeColor={"#fbbf24"}
               />
               <span className="text-white">Vietnamese</span>
             </div>{" "}
@@ -64,7 +64,7 @@ function Sidebar() {
                 type="circle"
                 percent={50}
                 width={50}
-                strokeColor={["#fbbf24"]}
+                strokeColor={"#fbbf24"}
               />
               <span className="text-white">English</span>
             </div>

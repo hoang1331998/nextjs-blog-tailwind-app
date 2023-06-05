@@ -4,6 +4,7 @@ import NotFound from "./not-found";
 
 import "antd/dist/antd.css";
 import "./globals.css";
+import "@/assets/customStyle/cv.css"
 
 const inter = Inter({ subsets: ["latin"] });
 
