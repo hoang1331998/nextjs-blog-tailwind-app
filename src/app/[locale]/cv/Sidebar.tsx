@@ -7,26 +7,26 @@ import {
   LinkedinOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
+import avatar from "@/assets/images/avatar.jpg";
 
 import React from "react";
+import MySkill from "./components/MySkill";
 function Sidebar() {
   return (
     <div className="w-full bg-[#292730] cv-page-height rounded-tl-[10px] rounded-l-[10px] ">
       {/* avatar */}
       <div className="w-full flex flex-col items-center justify-center avatar-block">
         <Image
+          src={`https://scontent.fhan1-1.fna.fbcdn.net/v/t39.30808-6/276159228_3333576333538914_9093025155722138155_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=oHWIB6q9Ng4AX_CDvAK&_nc_ht=scontent.fhan1-1.fna&oh=00_AfCeFWYCAEq9tj3wfegSm5AUA-NLFFojqtHIX3LpoDSIPQ&oe=64869A0B`}
           preview={{
             maskClassName: "rounded-full",
           }}
           className="rounded-full !w-[100px] !h-[100px] object-cover"
-          src="https://arter.bslthemes.com/wp-content/uploads/2020/09/face-1.jpg"
         />
         <h1 className="text-white font-bold text-[20px] mt-[6px] text-center">
           Vu Xuan Hoang
         </h1>
-        <h3 className="text-[#7a7a7a] text-center">
-          Front-end Developer 
-        </h3>
+        <h3 className="text-[#7a7a7a] text-center">Front-end Developer</h3>
       </div>
       {/* end-avatar */}
 
@@ -46,84 +46,33 @@ function Sidebar() {
             <span className="text-white text-[14px]">Age:</span>
             <span className="text-[#7a7a7a] text-[14px]">25</span>
           </div>
-          <div className="line w-full h-[1px] bg-[#7a7a7a] my-[15px]">
+          <div className="line w-full h-[1px] bg-[#7a7a7a] my-[25px]">
             &nbsp;
           </div>
-          <div className="flex justify-around">
-            <div className="flex flex-col justify-center items-center">
-              <Progress
-                type="circle"
-                percent={99}
-                width={50}
-                strokeColor={"#fbbf24"}
-              />
-              <span className="text-white">Vietnamese</span>
-            </div>{" "}
-            <div className="flex flex-col">
-              <Progress
-                type="circle"
-                percent={50}
-                width={50}
-                strokeColor={"#fbbf24"}
-              />
-              <span className="text-white">English</span>
-            </div>
+          <div>
+            <p className="text-white">English: </p>
+            <Progress
+              strokeColor={{
+                "0%": "rgb(251 191 36)",
+                "100%": "#87d068",
+              }}
+              percent={60}
+            />
           </div>
-          <div className="line w-full h-[1px] bg-[#7a7a7a] my-[15px]">
+          <div className="mt-[15px]">
+            <p className="text-white">Communication Skill:</p>
+            <Progress
+              strokeColor={{
+                "0%": "rgb(251 191 36)",
+                "100%": "#87d068",
+              }}
+              percent={80}
+            />
+          </div>
+          <div className="line w-full h-[1px] bg-[#7a7a7a] my-[25px]">
             &nbsp;
           </div>
-          <div className="skill-item flex items-center gap-[10px] py-[6px]">
-            <span className="text-[#fbbf24] mb-[5px]">
-              <CheckOutlined />
-            </span>
-            <span className="text-[#fbbf24] opacity-[0.8]">
-              HTML, CSS, JavaScript
-            </span>
-          </div>
-          <div className="skill-item flex items-center gap-[10px] py-[6px]">
-            <span className="text-[#fbbf24] mb-[5px]">
-              <CheckOutlined />
-            </span>
-            <span className="text-[#fbbf24] opacity-[0.8]">
-              ReactJS, NextJS, VueJS, TypeScript
-            </span>
-          </div>
-          <div className="skill-item flex items-center gap-[10px] py-[6px]">
-            <span className="text-[#fbbf24] mb-[5px]">
-              <CheckOutlined />
-            </span>
-            <span className="text-[#fbbf24] opacity-[0.8]">
-              Ant Design, Material UI, Bootstrap, Tailwind, Sass/Scss, ...
-            </span>
-          </div>
-          <div className="skill-item flex items-center gap-[10px] py-[6px]">
-            <span className="text-[#fbbf24] mb-[5px]">
-              <CheckOutlined />
-            </span>
-            <span className="text-[#fbbf24] opacity-[0.8]">
-              NodeJS, Mysql, MongoDB
-            </span>
-          </div>
-          <div className="skill-item flex items-center gap-[10px] py-[6px]">
-            <span className="text-[#fbbf24] mb-[5px]">
-              <CheckOutlined />
-            </span>
-            <span className="text-[#fbbf24] opacity-[0.8]">Git</span>
-          </div>
-          <div className="skill-item flex items-center gap-[10px] py-[6px]">
-            <span className="text-[#fbbf24] mb-[5px]">
-              <CheckOutlined />
-            </span>
-            <span className="text-[#fbbf24] opacity-[0.8]">
-              Blockchain knowledge
-            </span>
-          </div>
-          <div className="skill-item flex items-center gap-[10px] py-[6px]">
-            <span className="text-[#fbbf24] mb-[5px]">
-              <CheckOutlined />
-            </span>
-            <span className="text-[#fbbf24] opacity-[0.8]">Window, Linux</span>
-          </div>
+          <MySkill />
         </div>
 
         {/* end skill */}

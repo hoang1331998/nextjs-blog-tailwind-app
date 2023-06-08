@@ -1,4 +1,4 @@
-import ProjectCard from "@/components/Card/ProjectCard";
+
 import CounterFarm from "@/components/CounterFarm";
 import Footer from "@/components/Footer";
 import RotatingSlide from "@/components/RotatingSlide";
@@ -9,6 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 import vtcLogo from "@/assets/images/vtconline-logo.png";
 import rkLogo from "@/assets/images/rikkei-logo.png";
 import SidebarResponsive from "./SidebarResponsive";
+import MyProject from "./components/MyProject";
 
 function Content() {
   const t = useTranslations("CV");
@@ -61,12 +62,7 @@ function Content() {
       </div>
 
       <p className="text-white text-[25px] font-bold mb-[10px]">My projects</p>
-      <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-      </div>
+     <MyProject />
       <p className="text-white text-[25px] font-bold mb-[10px] mt-[20px]">
         My partners
       </p>
