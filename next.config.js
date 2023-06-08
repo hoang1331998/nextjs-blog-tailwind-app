@@ -8,6 +8,7 @@ const nextConfig = {
   exportPathMap: function () {
     return {
       '/': { page: '/' },
+      '/[locale]': { page: '/' },
       '/[locale]/cv': { page: '/[locale]/cv' }, // correct
     }
   },
