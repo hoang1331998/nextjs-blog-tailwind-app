@@ -5,10 +5,9 @@ import { useEffect } from "react";
 export default function Index({ params: { locale } }: any) {
   const router = useRouter();
 
-  console.log(locale);
-
   useEffect(() => {
     router.push(`${locale}/cv`);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return <div>Welcome to my website</div>;
 }
