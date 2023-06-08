@@ -21,6 +21,7 @@ function Sidebar() {
           preview={{
             maskClassName: "rounded-full",
           }}
+          alt="avatar"
           className="rounded-full !w-[100px] !h-[100px] object-cover"
         />
         <h1 className="text-white font-bold text-[20px] mt-[6px] text-center">
