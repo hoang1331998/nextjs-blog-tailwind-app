@@ -5,6 +5,12 @@ const nextConfig = {
     defaultLocale: "en",
   },
   trailingSlash: true,
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' },
+      '/[locale]/cv': { page: '/[locale]/cv' }, // correct
+    }
+  },
 };
 
 module.exports = nextConfig;
