@@ -2,7 +2,6 @@
 import CounterFarm from "@/components/CounterFarm";
 import Footer from "@/components/Footer";
 import RotatingSlide from "@/components/RotatingSlide";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
@@ -12,7 +11,7 @@ import SidebarResponsive from "./SidebarResponsive";
 import MyProject from "./components/MyProject";
 
 function Content() {
-  const t = useTranslations("CV");
+
   return (
     <div className="cv-content w-full cv-page-height bg-slate-700 overflow-y-auto py-[20px] px-[30px] no-scrollbar rounded-r-[10px] pb-0">
       {/* banner */}
@@ -38,7 +37,7 @@ function Content() {
           </p>
           <div className="bg-amber-400 w-[max-content] px-[30px] py-[10px] cursor-pointer absolute bottom-0 border border-amber-400 hover:border-[#fff] transition-all">
             <span className="text-black text-[12px] uppercase font-semibold">
-              {t("connect-now")}
+              Connect now
             </span>
           </div>
         </div>
