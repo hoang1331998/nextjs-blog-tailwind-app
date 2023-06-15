@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google";
-import "antd/dist/antd.css";
 import "./globals.css";
 import "@/assets/customStyle/cv.css";
 import { Metadata } from "next";

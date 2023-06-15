@@ -93,6 +93,12 @@
   border: none;
 }
 
+.ant-drawer-header .ant-drawer-title{
+  color: white;
+  opacity: 0.9;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .sidebar {
     display: none;
@@ -128,13 +134,17 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   .exp-com  {
     justify-content: center;
   }
   .cv-partner{
     flex-direction: column;
     gap: 10px;
+  }
+  .cv-footer{
+    flex-direction: column;
+    align-items: center;
   }
 }
 

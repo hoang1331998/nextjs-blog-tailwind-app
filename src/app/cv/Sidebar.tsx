@@ -1,13 +1,12 @@
 import { Image, Progress } from "antd";
 import {
-  CheckOutlined,
+
   FacebookOutlined,
   GithubOutlined,
   InstagramOutlined,
   LinkedinOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
-import avatar from "@/assets/images/avatar.jpg";
 
 import React from "react";
 import MySkill from "./components/MySkill";
@@ -17,7 +16,7 @@ function Sidebar() {
       {/* avatar */}
       <div className="w-full flex flex-col items-center justify-center avatar-block">
         <Image
-          src={`https://scontent.fhan1-1.fna.fbcdn.net/v/t39.30808-6/276159228_3333576333538914_9093025155722138155_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=oHWIB6q9Ng4AX_CDvAK&_nc_ht=scontent.fhan1-1.fna&oh=00_AfCeFWYCAEq9tj3wfegSm5AUA-NLFFojqtHIX3LpoDSIPQ&oe=64869A0B`}
+          src={`https://i.ibb.co/QcYmr8T/07fa15ac5e2cb172e83d.jpg`}
           preview={{
             maskClassName: "rounded-full",
           }}
