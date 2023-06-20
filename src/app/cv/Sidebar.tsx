@@ -10,7 +10,18 @@ import {
 
 import React from "react";
 import MySkill from "./components/MySkill";
+
 function Sidebar() {
+
+  const handleDownloadCv = () => {
+    const fileUrl = '/cv.pdf'; 
+
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.target = '_blank';
+    link.download = 'VuXuanHoang.pdf';
+    link.click();
+  }
   return (
     <div className="w-full bg-[#292730] cv-page-height rounded-tl-[10px] rounded-l-[10px] ">
       {/* avatar */}
@@ -78,7 +89,7 @@ function Sidebar() {
         {/* end skill */}
         {/* link */}
         <div className="cv-link w-full h-full bg-[#292730] cv-link rounded-bl-[10px] flex flex-col  justify-center items-center gap-[20px]">
-          <div className="w-[max-content] px-[10px] cursor-pointer rounded-[5px] text-center border border-[#7a7a7a] hover:bg-white hover:transition-all ease-in-out duration-300">
+          <div onClick={handleDownloadCv} className="w-[max-content] px-[10px] cursor-pointer rounded-[5px] text-center border border-[#7a7a7a] hover:bg-white hover:transition-all ease-in-out duration-300">
             <span className="text-[#7a7a7a]">Download CV</span>
           </div>
           <div className="flex w-full items-center justify-center gap-[15px]">
